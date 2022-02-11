@@ -12,7 +12,24 @@ n -> 1-
 sum = 1+2+3+...+10 = 55 */
 
 #include <stdio.h>
-int main() {
+
+//function main begins program execution
+int main() 
+{
+  //declaring variables
+  int num , count = 1 , total = 0;
+
+  //take user inputs
+  printf("Enter a number : ");
+  scanf("%d", &num);
+
+  while(count <= num)
+  {
+    total += count;
+    count++;   
+  }
+
+  printf("Total is %d\n", total);
   
   return 0;
 }
